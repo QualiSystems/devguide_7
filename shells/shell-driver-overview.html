@@ -44,14 +44,14 @@
 <meta property="og:url" content="https://qualisystems.github.io/devguide_7/shells/shell-driver-overview.html" />
 <meta property="og:site_name" content="CloudShell Developer Guide" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-03-07T19:39:39+02:00" />
+<meta property="article:published_time" content="2017-03-07T22:57:49+02:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@qualisystems" />
 <script type="application/ld+json">
 {"@context": "http://schema.org",
 "@type": "BlogPosting",
 "headline": "Shell Drivers Overview",
-"datePublished": "2017-03-07T19:39:39+02:00",
+"datePublished": "2017-03-07T22:57:49+02:00",
 "description": "What are Shells again?",
 "publisher": {"@type": "Organization",
 "logo": {"@type": "ImageObject",
@@ -221,13 +221,13 @@ object and will from that point on communicate with it to handle any commands.</
   in each one, twenty shell driver instances will be created, one to talk with each app in the sandbox.</li>
 </ul>
 
-<p><img src="https://qualisystems.github.io/devguide/assets/app_shell_arch.png" alt="Shell Commands" /></p>
+<p><img src="/devguide_7/assets/app_shell_arch.png" alt="Shell Commands" /></p>
 
 <ul>
   <li><strong>Inventory Shells</strong> - For inventory Shells, a dedicated driver is managed per Inventory Shell resource instance. If you take for example a shell for physical switch like the NX-OS shell for Cisco switches, a shell driver instance will be created for each managed Cisco switch in your inventory. In this case, since the switch is a permanent inventory item and not created per sandbox, the driver is also instantiated per device.</li>
 </ul>
 
-<p><img src="https://qualisystems.github.io/devguide/assets/inventory_shell_arch.png" alt="Shell Commands" /></p>
+<p><img src="/devguide_7/assets/inventory_shell_arch.png" alt="Shell Commands" /></p>
 
 <p>Whether a deployed app or an inventory component, CloudShell will handle routing commands to the right driver instance. When the user executes a command on a shell instance, CloudShell will first check if a driver instance is already running for the Shell instance, find on which execution server is running, and send the command to that driver to handle. If a driver is not yet running,
 for that inventory resource or app, a new driver instance will be launched.</p>
@@ -274,7 +274,7 @@ of cleanup and state recovery.</p>
 
 <p>The <em>cleanup</em> function will be called whenever the driver instance is stopped. You can place any code that persists the current state of the driver, disconnects sessions or stop any external processes here.</p>
 
-<p><img src="https://qualisystems.github.io/devguide/assets/driver_lifecycle.png" alt="Shell Commands" /></p>
+<p><img src="/devguide_7/assets/driver_lifecycle.png" alt="Shell Commands" /></p>
 
 <h4 id="commands-concurrency">Commands Concurrency</h4>
 

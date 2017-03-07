@@ -44,14 +44,14 @@
 <meta property="og:url" content="https://qualisystems.github.io/devguide_7/shells/debugging-shell-commands.html" />
 <meta property="og:site_name" content="CloudShell Developer Guide" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-03-07T19:39:39+02:00" />
+<meta property="article:published_time" content="2017-03-07T22:57:49+02:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@qualisystems" />
 <script type="application/ld+json">
 {"@context": "http://schema.org",
 "@type": "BlogPosting",
 "headline": "Debugging Shell Driver Commands",
-"datePublished": "2017-03-07T19:39:39+02:00",
+"datePublished": "2017-03-07T22:57:49+02:00",
 "description": "As a part of developing the Shell driver you’ll probably need to debug it in order to troubleshoot issues or get actual results from the app/device to understand how the code behaves. In order to help with this process, CloudShell provides debugging capabilities that you can use to attach to the driver process and debug it step by step.",
 "publisher": {"@type": "Organization",
 "logo": {"@type": "ImageObject",
@@ -271,18 +271,18 @@ the <em>initialize</em> function, and wait for a debugger to attach to it.</p>
 Then, add some code to the initialize as well as to some of the sample functions in the sample driver in our project.
 Once you’re done, click on the ‘CloudShell’ icon to deploy the driver in debug mode:</p>
 
-<p><img src="https://qualisystems.github.io/devguide/assets/debugging_ide.png" alt="Debugging" class="img-responsive" /></p>
+<p><img src="/devguide_7/assets/debugging_ide.png" alt="Debugging" class="img-responsive" /></p>
 
 <p>You can now run the function in CloudShell. You’ll notice it seems to be ‘stuck’ but what’s really happening behind
 the scenes is that the Python process is waiting for a debugger to attach to it in order to proceed.</p>
 
-<p><img src="https://qualisystems.github.io/devguide/assets/command_running.png" alt="Run a command" class="img-responsive" /></p>
+<p><img src="/devguide_7/assets/command_running.png" alt="Run a command" class="img-responsive" /></p>
 
 <p>Now set up a breakpoint in the initialize or in one of the other functions and run ‘Run/Attach to local process’ (in PyCharm).
 Select the right Python process based on the path of the virtual environment, which will contain the driver name.
 Your IDE should transition to debug mode and you should be able to step over/into functions and access runtime data.</p>
 
-<p><img src="https://qualisystems.github.io/devguide/assets/debugging_session.png" alt="Debugging" class="img-responsive" /></p>
+<p><img src="/devguide_7/assets/debugging_session.png" alt="Debugging" class="img-responsive" /></p>
 
 
 
