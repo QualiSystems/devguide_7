@@ -44,14 +44,14 @@
 <meta property="og:url" content="https://qualisystems.github.io/devguide_7/shells/discovering-inventory-snmp.html" />
 <meta property="og:site_name" content="CloudShell Developer Guide" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-03-07T22:57:49+02:00" />
+<meta property="article:published_time" content="2017-03-07T23:34:49+02:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@qualisystems" />
 <script type="application/ld+json">
 {"@context": "http://schema.org",
 "@type": "BlogPosting",
 "headline": "Discovering Inventory using SNMP",
-"datePublished": "2017-03-07T22:57:49+02:00",
+"datePublished": "2017-03-07T23:34:49+02:00",
 "description": "A common way to query inventory resources is using SNMP. Quali has created its own SNMP package, cloudshell-snmp, which uses PySNMP under the hoods.",
 "publisher": {"@type": "Organization",
 "logo": {"@type": "ImageObject",
@@ -259,7 +259,7 @@ with cloudshell-snmp.</p>
 inherits from Python’s <em>ordered_dictionary</em> with additional handy sorting and filtering functions to get the table’s
 rows and columns.</p>
 
-<p>Since the SNMP parameters are included as attributes in the <a href="https://github.com/QualiSystems/shell-resource-standard/blob/master/spec/shell_resource_standard.md">Resource Standard</a>
+<p>Since the SNMP parameters are included as attributes in the <a href="https://github.com/QualiSystems/cloudshell-standards/blob/master/Documentation/shell_resource_standard.md">Resource Standard</a>
 they can be easily retrieved by the driver when implementing the <em>get_inventory</em> function:</p>
 
 <figure class="highlight"><pre><code class="language-python" data-lang="python">def get_inventory(self, context):

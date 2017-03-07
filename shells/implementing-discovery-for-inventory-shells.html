@@ -44,14 +44,14 @@
 <meta property="og:url" content="https://qualisystems.github.io/devguide_7/shells/implementing-discovery-for-inventory-shells.html" />
 <meta property="og:site_name" content="CloudShell Developer Guide" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-03-07T22:57:49+02:00" />
+<meta property="article:published_time" content="2017-03-07T23:34:49+02:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@qualisystems" />
 <script type="application/ld+json">
 {"@context": "http://schema.org",
 "@type": "BlogPosting",
 "headline": "Implementing Discovery for Inventory Shells",
-"datePublished": "2017-03-07T22:57:49+02:00",
+"datePublished": "2017-03-07T23:34:49+02:00",
 "description": "Automated discovery makes it easy to import physical inventory devices into CloudShell by using automation to read their internal structure and attributes.",
 "publisher": {"@type": "Organization",
 "logo": {"@type": "ImageObject",
@@ -189,10 +189,10 @@ by using automation to read their internal structure and attributes.</p>
 <p>Physical resources Shells are defined with a certain internal structure which can be
 found in their CloudShell Standard. A basic physical resource can have <em>Resource Port</em> sub-resources,
 for example, whereas a <em>Switch</em> can have blades and port channels according to the
-<a href="https://github.com/QualiSystems/shell-networking-standard/blob/master/spec/networking_standard.md">Networking Shell Standard</a>.</p>
+<a href="https://github.com/QualiSystems/cloudshell-standards/blob/master/Documentation/networking_standard.md">Networking Shell Standard</a>.</p>
 
 <p>In the context of this example, we’ll create a new Switch type device based on the
-<a href="https://github.com/QualiSystems/shell-networking-standard/blob/master/spec/networking_standard.md">Networking Shell Standard</a>.
+<a href="https://github.com/QualiSystems/cloudshell-standards/blob/master/Documentation/networking_standard.md">Networking Shell Standard</a>.
 Run the following command to create a new Shell project:</p>
 
 <figure class="highlight"><pre><code class="language-bash" data-lang="bash">shellfoundry new implementing-discovery --template=networking/switch
@@ -269,7 +269,7 @@ imported/synched with CloudShell. Each <em>AutoLoadResource</em> object needs to
 
 <ul>
   <li>The <em>name</em> of the resources</li>
-  <li>The <em>model</em> of the resource according to the standard. The <a href="https://github.com/QualiSystems/shell-networking-standard/blob/master/spec/networking_standard.md">Networking Shell Standard</a>
+  <li>The <em>model</em> of the resource according to the standard. The <a href="https://github.com/QualiSystems/cloudshell-standards/blob/master/Documentation/networking_standard.md">Networking Shell Standard</a>
 defines a list of possible models, among them the ones used in this example.</li>
   <li>The <em>relative_address</em> of the resource. This field is also used to derive the hierarchy of the sub-resources. As you can
 see in the above example, ‘Chassis 1’ has the address “1” whereas the resource ‘Generic Module’ has the address of ‘1/1’ which
